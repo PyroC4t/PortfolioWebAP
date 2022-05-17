@@ -655,6 +655,7 @@ h2:after {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    margin: 0 5px;
 }
 
 .text button:hover {
