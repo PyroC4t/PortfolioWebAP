@@ -3,71 +3,24 @@
         <h4 class="titles">Educación</h4>
     </div>
       
-    <div class="row flex-section">
+    <div class="row flex-section" *ngFor="let educacion of educacionList">
         <div class="col-sm-8 col-md-12 col-xl-9">
             <div class="row center">
                 <div class="col-sm-4 flex cards-img">
                     <img class="img-item" src="/assets/Argentina-programa-logo.png" alt="logo Instituto">
                 </div>
                 <div class="col-sm cards-section">
-                <h4>{{portfolioAp.educacion}}</h4>
+                <h4>{{educacion.title}}</h4>
                 <ul class="listSquare">
-                    <li>Instituto: {{portfolioAp.instituto}}</li>
-                    <li>Titulo: {{portfolioAp.titulo}}</li>
-                    <li>Periodo: {{portfolioAp.periodo}}</li>
-                </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-8 col-md-12 col-xl-9">
-            <div class="row center">
-                <div class="col-sm-4 flex cards-img">
-                    <img class="img-item" src="/assets/Argentina-programa-logo.png" alt="logo Instituto">
-                </div>
-                <div class="col-sm cards-section">
-                <h4>Lorem Ipsum</h4>
-                <ul class="listSquare">
-                    <li>Instituto: Lorem ipsum</li>
-                    <li>Titulo: Lorem ipsum</li>
-                    <li>Periodo: 2011 - 2017</li>
-                </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-8 col-md-12 col-xl-9">
-            <div class="row center">
-                <div class="col-sm-4 flex cards-img">
-                    <img class="img-item" src="/assets/Argentina-programa-logo.png" alt="logo Instituto">
-                </div>
-                <div class="col-sm cards-section">
-                <h4>Lorem Ipsum</h4>
-                <ul class="listSquare">
-                    <li>Instituto: Lorem ipsum</li>
-                    <li>Titulo: Lorem ipsum</li>
-                    <li>Periodo: 2011 - 2017</li>
-                </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-8 col-md-12 col-xl-9">
-            <div class="row center">
-                <div class="col-sm-4 flex cards-img">
-                    <img class="img-item" src="/assets/Argentina-programa-logo.png" alt="logo Instituto">
-                </div>
-                <div class="col-sm cards-section">
-                <h4>Lorem Ipsum</h4>
-                <ul class="listSquare">
-                    <li>Instituto: Lorem ipsum</li>
-                    <li>Titulo: Lorem ipsum</li>
-                    <li>Periodo: 2011 - 2017</li>
+                    <li>Instituto: {{educacion.instituto}}</li>
+                    <li>Titulo: {{educacion.titulo}}</li>
+                    <li>Periodo: {{educacion.periodo}}</li>
                 </ul>
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
 <br>
 <br>

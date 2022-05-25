@@ -1,7 +1,29 @@
 {
-    "educacion": "Diseño grafico",
-	"instituto": "Universidad Nacional de Cuyo",
-	"titulo": "Diseñador grafico",
-	"periodo": "2011-2017"
+    "educacion": [
+		{
+			"title" : "Diseñador grafico",
+			"instituto" : "Universidad Nacional de Cuyo",
+			"titulo" : "Diseñador grafico",
+			"periodo" : "2011 - 2017"
+		},
+		{
+			"title" : "Diseño de imagenes",
+			"instituto" : "Universidad Nacional de Cuyo",
+			"titulo" : "Imagenes vectoriales y pixelares I, II, III",
+			"periodo" : "2015 - 2016"
+		},
+		{
+			"title" : "programacion basica",
+			"instituto" : "Instituo Nacional de tecnologia industrial",
+			"titulo" : "Programacion basica",
+			"periodo" : "2020 - 2020"
+		},
+		{
+			"title" : "Web Developer jr.",
+			"instituto" : "Instituto Nacional de tecnologia industrial",
+			"titulo" : "Full stack developer jr.",
+			"periodo" : "2021 - 2022"
+		}
+	]
 }
 
