@@ -4,25 +4,29 @@
 			"title" : "Diseñador grafico",
 			"instituto" : "Universidad Nacional de Cuyo",
 			"titulo" : "Diseñador grafico",
-			"periodo" : "2011 - 2017"
+			"periodo" : "2011 - 2017",
+			"img": "./assets/logoUnc.png"
 		},
 		{
 			"title" : "Diseño de imagenes",
 			"instituto" : "Universidad Nacional de Cuyo",
 			"titulo" : "Imagenes vectoriales y pixelares I, II, III",
-			"periodo" : "2015 - 2016"
+			"periodo" : "2015 - 2016",
+			"img": "./assets/logoUnc.png"
 		},
 		{
 			"title" : "programacion basica",
 			"instituto" : "Instituo Nacional de tecnologia industrial",
 			"titulo" : "Programacion basica",
-			"periodo" : "2020 - 2020"
+			"periodo" : "2020 - 2020",
+			"img": "./assets/intilogo.png"
 		},
 		{
 			"title" : "Web Developer jr.",
 			"instituto" : "Instituto Nacional de tecnologia industrial",
 			"titulo" : "Full stack developer jr.",
-			"periodo" : "2021 - 2022"
+			"periodo" : "2021 - 2022",
+			"img": "./assets/intilogo.png"
 		}
 	]
 }
