@@ -4,97 +4,34 @@
     </div>
     <div class="container">
         <p class="subtitles">Desarrollador web</p>
-        <div class="row justify-content-center">
+    <div class="row justify-content-center" *ngFor="let skills of skillsList">
             <div class="col-sm-6 cards-skills">
-                <p class="titles-skill">Frontend</p>
+                <p class="titles-skill">{{skills.title}}</p>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="row">
                             <div class="col-sm flex-skill">
                                 <i class="fa-solid fa-file-code"></i>
-                                <p>HTML</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>JAVASCRIPT</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>BOOTSTRAP</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>ANGULAR</p>
+                                <p>{{skills.skill}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="col-sm-6 cards-skills">
+            <!-- <div class="col-sm-6 cards-skills">
                 <p class="titles-skill">Backend</p>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="row">
                             <div class="col-sm flex-skill">
                                 <i class="fa-solid fa-server"></i>
-                                <p>JAVA</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-server"></i>
-                                <p>MySQL</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-server"></i>
-                                <p>JAVA SPRINGBOOT</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-server"></i>
-                                <p>DEVOPS</p>
+                                <p>{{skills.skillback}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <br>

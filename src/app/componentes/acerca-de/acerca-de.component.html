@@ -3,35 +3,29 @@
        <p class="titles">Acerca de mi</p> 
     </div>
 
-    <div class="row center">
+    <div class="row center" *ngFor="let acercaDe of acercaDeList">
         <div class="col-sm-4 col-md-3 col-xl-3 flex">
-            <img src="/assets/FotoPerfil.jpg" class="img-rounded" alt="FotoPerfil">
+            <img [src]="acercaDe.img" class="img-rounded" alt="FotoPerfil">
         </div>
         <div class="col-sm-6 col-md-8 col-xl-8 cards-about">
-            <h5>Desarrollador web & Diseñador grafico</h5>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into 
-                 electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply 
-                 random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at 
-                 Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-            </p>
+            <h5>{{acercaDe.title}}</h5>
+            <p>{{acercaDe.descripcion}}</p>
             <br>
             <div class="row center">
                 <div class="cards-icon">
-                    <a href="https:www.facebook.com"><i class="fa-brands fa-facebook home-icons"></i></a>
+                    <a [href]="acercaDe.link1"><i class="fa-brands fa-facebook home-icons"></i></a>
                     <h6>Facebook</h6>
                 </div>
                 <div class="cards-icon">
-                    <a href="https:www.instagram.com"><i class="fa-brands fa-instagram home-icons"></i></a>
+                    <a [href]="acercaDe.link2"><i class="fa-brands fa-instagram home-icons"></i></a>
                     <h6>Instagram</h6>
                 </div>
                 <div class="cards-icon">
-                    <a href="https:www.github.com"><i class="fa-brands fa-github home-icons"></i></a>
+                    <a [href]="acercaDe.link3"><i class="fa-brands fa-github home-icons"></i></a>
                     <h6>Github</h6>
                 </div>
                 <div class="cards-icon">
-                    <a href="https:www.linkedin.com"><i class="fa-brands fa-linkedin home-icons"></i></a>
+                    <a [href]="acercaDe.link4"><i class="fa-brands fa-linkedin home-icons"></i></a>
                     <h6>Linkedin</h6>
                 </div>
             </div>

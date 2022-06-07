@@ -1,4 +1,15 @@
 {
+	"acercaDe" : [
+		{
+			"title" : "Diseñador grafico & Desarrollador Web",
+			"descripcion" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+			"link1" : "https://www.facebook.com/",
+			"link2" : "https://www.instagram.com/",
+			"link3" : "https://www.github.com/",
+			"link4" : "https://www.linkedin.com/",
+			"img" : "./assets/FotoPerfil.jpg"
+		}
+	],
     "educacion": [
 		{
 			"title" : "Diseñador grafico",
@@ -27,6 +38,71 @@
 			"titulo" : "Full stack developer jr.",
 			"periodo" : "2021 - 2022",
 			"img": "./assets/intilogo.png"
+		}
+	],
+
+	"skills" : [
+		{
+			"title" : "Frontend",
+			"skill" : "HTML"
+		},
+		{
+			"title" : "Frontend",
+			"skill" : "HTML"
+		},
+		{
+			"title" : "Frontend",
+			"skill" : "HTML"
+		}
+	],
+		
+	"experiencia" : [
+		{
+			"title" : "Trabajo 1",
+			"empresa" : "Empresa 1",
+			"cargo" : "cargo 1",
+			"periodo" : "2010 - 2012",
+			"descripcion" : "breve descripcion de la actividad",
+			"img" : "./assets/LogoEmpresa.png"
+		},
+		{
+			"title" : "Trabajo 2",
+			"empresa" : "Empresa 2",
+			"cargo" : "cargo 2",
+			"periodo" : "2012 - 2014",
+			"descripcion" : "breve descripcion de la actividad",
+			"img" : "./assets/LogoEmpresa.png"
+		},
+		{
+			"title" : "Trabajo 3",
+			"empresa" : "Empresa 3",
+			"cargo" : "cargo 3",
+			"periodo" : "2014 - 2016",
+			"descripcion" : "breve descripcion de la actividad",
+			"img" : "./assets/LogoEmpresa.png"
+		}
+	],
+	"proyectos" : [
+		{
+			"title" : "Proyecto 1",
+			"descripcion" : "lorem ipsum dolor sit amet, consectetur adipiscing",
+			"link" : "www.github.com",
+			"git" : "www.github.com",
+			"img" : "./assets/imgHeader.jpg"
+		},
+		{
+			"title" : "Proyecto 2",
+			"descripcion" : "lorem ipsum dolor sit amet, consectetur adipiscing",
+			"link" : "www.github.com",
+			"git" : "www.github.com",
+			"img" : "./assets/imgHeader.jpg"
+		},
+		{
+			"title" : "Proyecto 3",
+			"descripcion" : "lorem ipsum dolor sit amet, consectetur adipiscing",
+			"link" : "https://www.github.com",
+			"git" : "https://www.github.com",
+			"img" : "./assets/imgHeader.jpg"
 		}
 	]
 }

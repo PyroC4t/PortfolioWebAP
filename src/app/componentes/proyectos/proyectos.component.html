@@ -4,49 +4,17 @@
     </div>
     
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-        <div class="carousel-indicators" style="margin-bottom: 10px">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
         
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" *ngFor="let proyectos of proyectosList">
                 <main class="grid">
                     <article>
-                        <img src="/assets/imgHeader.jpg" alt="imgProyecto">
+                        <img [src]="proyectos.img" alt="imgProyecto">
                         <div class="text">
-                            <h4>Proyecto 1</h4>
-                            <p>lorem impsum dolor sit amet consectetur adipiscing elit Eligendi, debitis?</p>
-                            <a href="http://www.github.com"><button><i class="fa-solid fa-link"></i></button></a>
-                            <a href="http://www.github.com"><button><i class="fa-brands fa-github"></i></button></a>
-                        </div>
-                    </article>
-                </main>
-            </div>
-            <div class="carousel-item">
-                <main class="grid">
-                    <article>
-                        <img src="/assets/imgHeader.jpg" alt="imgProyecto">
-                        <div class="text">
-                            <h4>Proyecto 2</h4>
-                            <p>lorem impsum dolor sit amet consectetur adipiscing elit Eligendi, debitis?</p>
-                            <a href="http://www.github.com"><button><i class="fa-solid fa-link"></i></button></a>
-                            <a href="http://www.github.com"><button><i class="fa-brands fa-github"></i></button></a>
-                        </div>
-                    </article>
-                </main>
-            </div>
-            <div class="carousel-item">
-                <main class="grid">
-                    <article>
-                        <img src="/assets/imgHeader.jpg" alt="imgProyecto">
-                        <div class="text">
-                            <h4>Proyecto 3</h4>
-                            <p>lorem impsum dolor sit amet consectetur adipiscing elit Eligendi, debitis?</p>
-                            <a href="http://www.github.com"><button><i class="fa-solid fa-link"></i></button></a>
-                            <a href="http://www.github.com"><button><i class="fa-brands fa-github"></i></button></a>
+                            <h4>{{proyectos.title}}</h4>
+                            <p>{{proyectos.descripcion}}</p>
+                            <a [href]="proyectos.link"><button><i class="fa-solid fa-link"></i></button></a>
+                            <a [href]="proyectos.git"><button><i class="fa-brands fa-github"></i></button></a>
                         </div>
                     </article>
                 </main>

@@ -3,51 +3,19 @@
         <p class="titles">Experiencia</p>
     </div>
 
-    <div class="row flex-section">
+    <div class="row flex-section" *ngFor="let experiencia of experienciaList">
         <div class="col-sm-2 col-md-3 col-xl-3 flex cards-img">
-            <img class="img-item" src="/assets/LogoEmpresa.png" alt="logoEmpresa">
+            <img class="img-item" [src]="experiencia.img" alt="logoEmpresa">
         </div>
 
         <div class="col-sm-5 col-md-8 col-xl-6 cards-section">
-            <h4>Trabajo 1</h4>
+            <h4>{{experiencia.title}}</h4>
             <ul class="listSquare">
-                <li>Empresa:</li>
-                <li>cargo:</li>
-                <li>periodo: 1900 - 2100</li>
+                <li>Empresa: {{experiencia.empresa}}</li>
+                <li>cargo: {{experiencia.cargo}}</li>
+                <li>periodo: {{experiencia.periodo}}</li>
             </ul>
-            <p>breve descripcion de la actividad que realizaba</p>
-        </div>
-    </div>
-
-    <div class="row flex-section">
-        <div class="col-sm-2 col-md-3 col-xl-3 flex cards-img">
-            <img class="img-item" src="/assets/LogoEmpresa.png" alt="logoEmpresa">
-        </div>
-
-        <div class="col-sm-5 col-md-8 col-xl-6 cards-section">
-            <h4>Trabajo 2</h4>
-            <ul class="listSquare">
-                <li>Empresa:</li>
-                <li>cargo:</li>
-                <li>periodo: 1900 - 2100</li>
-            </ul>
-            <p>breve descripcion de la actividad que realizaba</p>
-        </div>
-    </div>
-
-    <div class="row flex-section">
-        <div class="col-sm-2 col-md-3 col-xl-3 flex cards-img">
-            <img class="img-item" src="/assets/LogoEmpresa.png" alt="logoEmpresa">
-        </div>
-
-        <div class="col-sm-5 col-md-8 col-xl-6 cards-section">
-            <h4>Trabajo 3</h4>
-            <ul class="listSquare">
-                <li>Empresa:</li>
-                <li>cargo:</li>
-                <li>periodo: 1900 - 2100</li>
-            </ul>
-            <p>breve descripcion de la actividad que realizaba</p>
+            <p>{{experiencia.descripcion}}</p>
         </div>
     </div>
 </div>
