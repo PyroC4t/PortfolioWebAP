@@ -41,10 +41,6 @@ a:visited {
     text-decoration: none;
 }
   
-a:hover {
-    font-size: 150%;
-}
-  
 a:active {
     color: white;
     text-decoration: none;

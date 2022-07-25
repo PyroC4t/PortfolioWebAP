@@ -1,0 +1,13 @@
+.modalLogin {
+    background: rgb(0, 70, 190);
+    height: 100vh;
+    }
+
+.p{
+    font-family: Helvetica;
+}
+
+.card{
+    background-color:rgba(37, 117, 252, 1);
+    max-width: 100%;
+}

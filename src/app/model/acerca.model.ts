@@ -1,10 +1,10 @@
 export class acerca {
     id?: number;
-    titulo: String;
-    descripcion: String;
-    img: String;
+    titulo: string;
+    descripcion: string;
+    img: string;
 
-    constructor(titulo: String,descripcion: String,img: String) {
+    constructor(titulo: string,descripcion: string,img: string) {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.img = img;
