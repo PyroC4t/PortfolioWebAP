@@ -3,51 +3,25 @@
         <p class="titles">Experiencia</p>
     </div>
 
-    <div class="row flex-section">
-        <div class="col-sm-2 col-md-3 col-xl-3 flex cards-img">
-            <img class="img-item" src="/assets/LogoEmpresa.png" alt="logoEmpresa">
-        </div>
-
-        <div class="col-sm-5 col-md-8 col-xl-6 cards-section">
-            <h4>Trabajo 1</h4>
-            <ul class="listSquare">
-                <li>Empresa:</li>
-                <li>cargo:</li>
-                <li>periodo: 1900 - 2100</li>
-            </ul>
-            <p>breve descripcion de la actividad que realizaba</p>
-        </div>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-primary" routerLink="/nuevaexp" *ngIf="isLogged">Nueva experiencia</button>
     </div>
 
-    <div class="row flex-section">
+    <div class="row flex-section" *ngFor="let Experiencia of exp">
         <div class="col-sm-2 col-md-3 col-xl-3 flex cards-img">
             <img class="img-item" src="/assets/LogoEmpresa.png" alt="logoEmpresa">
         </div>
 
         <div class="col-sm-5 col-md-8 col-xl-6 cards-section">
-            <h4>Trabajo 2</h4>
+            <h4>{{Experiencia.nombreExp}}</h4>
             <ul class="listSquare">
-                <li>Empresa:</li>
-                <li>cargo:</li>
-                <li>periodo: 1900 - 2100</li>
+                <li>Empresa: {{Experiencia.empresaExp}}</li>
+                <li>cargo: {{Experiencia.cargoExp}}</li>
+                <!-- <li>periodo: 1900 - 2100</li> -->
             </ul>
-            <p>breve descripcion de la actividad que realizaba</p>
-        </div>
-    </div>
-
-    <div class="row flex-section">
-        <div class="col-sm-2 col-md-3 col-xl-3 flex cards-img">
-            <img class="img-item" src="/assets/LogoEmpresa.png" alt="logoEmpresa">
-        </div>
-
-        <div class="col-sm-5 col-md-8 col-xl-6 cards-section">
-            <h4>Trabajo 3</h4>
-            <ul class="listSquare">
-                <li>Empresa:</li>
-                <li>cargo:</li>
-                <li>periodo: 1900 - 2100</li>
-            </ul>
-            <p>breve descripcion de la actividad que realizaba</p>
+            <p>{{Experiencia.descripcionExp}}</p>
+            <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill"></i>Editar</button>
+            <button class="btn btn-dark" (click)="delete(Experiencia.id)" *ngIf="isLogged"><i class="bi bi-trash-fill"></i>Borrar</button>
         </div>
     </div>
 </div>
