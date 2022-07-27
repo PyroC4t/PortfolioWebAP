@@ -1,0 +1,14 @@
+i{
+    font-size: 20px;
+    margin: 0px 10px 10px 5px;
+    align-items: center;
+}
+
+button{
+    background-color: black;
+    color: white;
+    margin: 25px 10px 10px 10px;
+    padding: 10px 20px;
+    border-radius: 0.7rem;
+    align-items: center;
+}

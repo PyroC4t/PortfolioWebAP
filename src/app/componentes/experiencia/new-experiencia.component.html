@@ -1,28 +1,39 @@
-<div class="container backcolor">
-    <div class="row">
-        <div>
+<div class="container-fluid newExp d-flex justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
+        <div class="cards-section">
+
+            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+            </div>
+
+            <h6 class="text-center">Completar el formulario para añadir una nueva sección</h6>
+
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreExp">Nombre de la profesion</label>
-                    <input type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="nombreExp" required>
+                    <label for="nombreExp">Nombre de la profesión</label>
+                    <input type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="nombreExp" required placeholder="Ej: programador">
                 </div>
                 <div class="form-group">
                     <label for="empresaExp">Nombre de la empresa</label>
-                    <input type="text" class="form-control" id="empresaExp" name="empresaExp" [(ngModel)]="empresaExp" required>
+                    <input type="text" class="form-control" id="empresaExp" name="empresaExp" [(ngModel)]="empresaExp" required placeholder="Ej: RockStar">
                 </div>
                 <div class="form-group">
-                    <label for="cargoExp">cargo</label>
-                    <input type="text" class="form-control" id="cargoExp" name="cargoExp" [(ngModel)]="cargoExp" required>
+                    <label for="cargoExp">Cargo</label>
+                    <input type="text" class="form-control" id="cargoExp" name="cargoExp" [(ngModel)]="cargoExp" required placeholder="Ej: Programador Senior">
                 </div>
                 <div class="form-group">
-                    <label for="descripcionExp">descripcion de la actividad</label>
-                    <input type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="descripcionExp" required>
+                    <label for="descripcionExp">Descripción de la actividad</label>
+                    <input type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="descripcionExp" required placeholder="Ej: Jefe de la sección de programación">
                 </div>
                 <div class="form-group">
                     <label for="imgExp">URL imagen</label>
-                    <input type="text" class="form-control" id="imgExp" name="imgExp" [(ngModel)]="imgExp" required>
+                    <input type="text" class="form-control" id="imgExp" name="imgExp" [(ngModel)]="imgExp" required placeholder="Se recomienda utilizar imágenes en formato PNG">
                 </div>
-                <button class="btn btn-primary">Agregar experiencia</button>
+
+                <div class="text-center">
+                    <button class="btn btn-outline-light justify-content-center"><b>Añadir nueva experiencia</b></button>
+                </div>
+
             </form>
         </div>
     </div>
