@@ -520,6 +520,13 @@ h2:after {
     transition: .3s;
 }
 
+.btnedit{
+    margin: 2rem 1rem 0.1rem 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;   
+}
+
 .btncontact:hover {
     background-color: #006efd;
 }

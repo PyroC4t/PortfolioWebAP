@@ -1,0 +1,41 @@
+<div class="container-fluid editPro d-flex justify-content-center" *ngIf="proyect">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
+        <div class="cards-section">
+
+            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+            </div>
+
+            <h6 class="text-center">Completar el formulario para actualizar la información</h6>
+
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombrePro">Nombre del Proyecto</label>
+                    <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="proyect.nombrePro" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionPro">Descripción del proyecto</label>
+                    <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="proyect.descripcionPro" required>
+                </div>
+                <div class="form-group">
+                    <label for="enlacesitePro">URL del sitio del proyecto</label>
+                    <input type="text" class="form-control" id="enlacesitePro" name="enlacesitePro" [(ngModel)]="proyect.enlacesitePro" required>
+                </div>
+                <div class="form-group">
+                    <label for="enlacerepoPro">URL del repositorio en GitHub</label>
+                    <input type="text" class="form-control" id="enlacerepoPro" name="enlacerepoPro" [(ngModel)]="proyect.enlacerepoPro" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgPro">URL de la imagen</label>
+                    <input type="text" class="form-control" id="imgPro" name="imgPro" [(ngModel)]="proyect.imgPro" required>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
