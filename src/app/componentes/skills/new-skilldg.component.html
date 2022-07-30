@@ -1,0 +1,32 @@
+<div class="container-fluid newSkill d-flex justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
+        <div class="cards-section">
+
+            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+            </div>
+
+            <h6 class="text-center">Completar el formulario para añadir una nueva sección</h6>
+
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreSkill">Nombre de skill</label>
+                    <input type="text" class="form-control" id="nombreSkill" name="nombreSkill" [(ngModel)]="nombreSkill" required placeholder="Ej: CorelDraw ">
+                </div>
+                <div class="form-group">
+                    <label for="porcentajeSkill">Porcentaje de skill</label>
+                    <input type="text" class="form-control" id="porcentajeSkill" name="porcentajeSkill" [(ngModel)]="porcentajeSkill" required placeholder="Valores entre 0-100">
+                </div>
+                <div class="form-group">
+                    <label for="imgSkill">Imagen de skill</label>
+                    <input type="text" class="form-control" id="imgSkill" name="imgSkill" [(ngModel)]="imgSkill" required placeholder="Ej: URL imagen">
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-outline-light justify-content-center"><b>Añadir nuevo Skill</b></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
