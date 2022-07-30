@@ -2,159 +2,38 @@
     <div class="col-sm">
         <p class="titles">Skills</p>
     </div>
-    <div class="container">
-        <p class="subtitles">Desarrollador web</p>
-        <div class="row justify-content-center">
-            <div class="col-sm-6 cards-skills">
-                <p class="titles-skill">Frontend</p>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>HTML</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>JAVASCRIPT</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>BOOTSTRAP</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-file-code"></i>
-                                <p>ANGULAR</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-sm-6 cards-skills">
-                <p class="titles-skill">Backend</p>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-server"></i>
-                                <p>JAVA</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-server"></i>
-                                <p>MySQL</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-server"></i>
-                                <p>JAVA SPRINGBOOT</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="row">
-                            <div class="col-sm flex-skill">
-                                <i class="fa-solid fa-server"></i>
-                                <p>DEVOPS</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-
+        
     <div class="container">
         <p class="subtitles">Diseñador grafico</p>
+
+        <div class="col-lg-12 text-center">
+            <button type="button" class="btn btn-light btn-lg" routerLink="/nuevaSkill" *ngIf="isLogged"><b>Añadir Skill</b></button>
+        </div>
+
         <div class="row justify-content-center">
-            <div class="col-sm-5 cards-skills">
-                <p class="titles-skill">Diseño Grafico</p>
+            <div class="col-sm-8 cards-skills">
+                <p class="titles-skill">Diseño Grafico & Multimedia</p>
 
                 <div class="col-sm">
-                    <div class="row">
-                        <div class="col-sm flex-skillpb">
-                            <img class="iconskill" src="/assets/Ailogo.png" alt="img Skill">
+                    <!-- <div class="row"> *este row separa en 2 columnas -->
+                        <div class="col-sm flex-skillpb" *ngFor="let Skilldg of skill">
+                            <img class="iconskill" src="{{Skilldg.imgSkill}}" alt="img Skill">
                             <div class="skills">
                                 <div class="skill">
-                                    <div class="skill-name">Illustrator</div>
+                                    <div class="skill-name">{{Skilldg.nombreSkill}}</div>
                                     <div class="skill-bar">
-                                        <div class="skill-per" per="90%" style="max-width:90%;"></div>
+                                        <div class="skill-per" per="90%" style="max-width:{{Skilldg.porcentajeSkill}}%"></div>
                                     </div>
+                                    <button class="btn btn-dark" routerLink="/editSkilldg/{{Skilldg.id}}" *ngIf="isLogged"><i class="icon bi bi-pencil-fill"></i><b> Editar</b></button>
+                                    <button class="btn btn-dark" (click)="delete(Skilldg.id)" *ngIf="isLogged"><i class="icon bi bi-trash-fill"></i><b> Borrar</b></button>
                                 </div>
                              </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-sm">
-                    <div class="row">
-                        <div class="col-sm flex-skillpb">
-                            <img class="iconskill" src="/assets/Pslogo.png" alt="img Skill">
-                            <div class="skills">
-                                <div class="skill">
-                                    <div class="skill-name">Photoshop</div>
-                                    <div class="skill-bar">
-                                        <div class="skill-per" per="70%" style="max-width:70%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm">
-                    <div class="row">
-                        <div class="col-sm flex-skillpb">
-                            <img class="iconskill" src="/assets/Idlogo.png" alt="img Skill">
-                            <div class="skills">
-                                <div class="skill">
-                                    <div class="skill-name">Indesign</div>
-                                    <div class="skill-bar">
-                                        <div class="skill-per" per="60%" style="max-width:60%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- </div> -->   
                 </div>
             </div>
 
-            <div class="col-sm-5 cards-skills">
+            <!--<div class="col-sm-5 cards-skills">
                 <p class="titles-skill">Multimedia</p>
 
                 <div class="col-sm">
@@ -172,39 +51,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm">
-                    <div class="row">
-                        <div class="col-sm flex-skillpb">
-                            <img class="iconskill" src="/assets/Aelogob.png" alt="img Skill">
-                            <div class="skills">
-                                <div class="skill">
-                                    <div class="skill-name">After effects</div>
-                                    <div class="skill-bar">
-                                        <div class="skill-per" per="50%" style="max-width:50%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm">
-                    <div class="row">
-                        <div class="col-sm flex-skillpb">
-                            <img class="iconskill" src="/assets/Aulogob.png" alt="img Skill">
-                            <div class="skills">
-                                <div class="skill">
-                                    <div class="skill-name">Audition</div>
-                                    <div class="skill-bar">
-                                        <div class="skill-per" per="30%" style="max-width:30%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

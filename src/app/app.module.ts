@@ -21,6 +21,11 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
+import { NewSkilldgComponent } from './componentes/skills/new-skilldg.component';
+import { EditSkilldgComponent } from './componentes/skills/edit-skilldg.component';
+import { SkillsdevComponent } from './componentes/skillsdev/skillsdev.component';
+import { NewSkilldevComponent } from './componentes/skillsdev/new-skilldev.component';
+import { EditSkilldevComponent } from './componentes/skillsdev/edit-skilldev.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.com
     NewEducacionComponent,
     EditEducacionComponent,
     NewProyectoComponent,
-    EditProyectoComponent
+    EditProyectoComponent,
+    NewSkilldgComponent,
+    EditSkilldgComponent,
+    SkillsdevComponent,
+    NewSkilldevComponent,
+    EditSkilldevComponent
   ],
   imports: [
     BrowserModule,
