@@ -26,6 +26,10 @@ import { EditSkilldgComponent } from './componentes/skills/edit-skilldg.componen
 import { SkillsdevComponent } from './componentes/skillsdev/skillsdev.component';
 import { NewSkilldevComponent } from './componentes/skillsdev/new-skilldev.component';
 import { EditSkilldevComponent } from './componentes/skillsdev/edit-skilldev.component';
+import { NewAcercadeComponent } from './componentes/acerca-de/new-acercade.component';
+import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.component';
+import { NewUserComponent } from './componentes/header/new-user.component';
+import { EditUserComponent } from './componentes/header/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { EditSkilldevComponent } from './componentes/skillsdev/edit-skilldev.com
     EditSkilldgComponent,
     SkillsdevComponent,
     NewSkilldevComponent,
-    EditSkilldevComponent
+    EditSkilldevComponent,
+    NewAcercadeComponent,
+    EditAcercadeComponent,
+    NewUserComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

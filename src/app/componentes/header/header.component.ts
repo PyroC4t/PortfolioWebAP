@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { persona } from 'src/app/model/persona.model';
-import { PersonaService } from 'src/app/servicios/persona.service';
+import { User } from 'src/app/model/user';
+import { ServiceUserService } from 'src/app/servicios/service-user.service';
 import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
@@ -10,20 +10,37 @@ import { TokenService } from 'src/app/servicios/token.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  isLogged = false;
-  persona:persona =new persona("","","");
+  user: User[] = [];
 
-  constructor(public personaService:PersonaService,private router:Router, private tokenService:TokenService) { }
+  constructor(private serviceUser: ServiceUserService, private router: Router, private tokenService: TokenService) { }
+
+  isLogged = false;
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data});
+    this.cargarUser();
     if(this.tokenService.getToken()){
-      this.isLogged=true;
-    }else{
+      this.isLogged = true;
+    } else{
       this.isLogged = false;
     }
   }
+  
+  cargarUser(): void {
+    this.serviceUser.lista().subscribe(data => {this.user = data});
+  }
 
+  delete(id?: number){
+    if(id != undefined){
+      this.serviceUser.delete(id).subscribe(
+        data => {
+          this.cargarUser();
+        }, err => {
+          alert("No se pudo borrar el usuario");
+        }
+      )
+    }
+  }
+  
   onLogOut(): void {
     this.tokenService.logOut();
     window.location.reload();

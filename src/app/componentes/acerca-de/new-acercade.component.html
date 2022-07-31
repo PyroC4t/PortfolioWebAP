@@ -1,0 +1,45 @@
+<div class="container-fluid newAcerca d-flex justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
+        <div class="cards-section">
+
+            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+            </div>
+
+            <h6 class="text-center">Completar el formulario para añadir una nueva sección</h6>
+
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="tituloAc">Titulo de la información</label>
+                    <input type="text" class="form-control" id="tituloAc" name="tituloAc" [(ngModel)]="tituloAc" required placeholder="Ej: programador">
+                </div>
+                <div class="form-group">
+                    <label for="descripcionAc">descripcion sobre mi</label>
+                    <input type="text" class="form-control" id="descripcionAc" name="descripcionAc" [(ngModel)]="descripcionAc" required placeholder="Ej: RockStar">
+                </div>
+                <div class="form-group">
+                    <label for="linkiAc">URL de tu Instagram</label>
+                    <input type="text" class="form-control" id="linkiAc" name="linkiAc" [(ngModel)]="linkiAc" required placeholder="Ej: Programador Senior">
+                </div>
+                <div class="form-group">
+                    <label for="linkgAc">URL de tu Github</label>
+                    <input type="text" class="form-control" id="linkgAc" name="linkgAc" [(ngModel)]="linkgAc" required placeholder="Ej: Jefe de la sección de programación">
+                </div>
+                <div class="form-group">
+                    <label for="linklAc">URL de tu Linkedin</label>
+                    <input type="text" class="form-control" id="linklAc" name="linklAc" [(ngModel)]="linklAc" required placeholder="Se recomienda utilizar imágenes en formato PNG">
+                </div>
+
+                <div class="form-group">
+                    <label for="imgAc">URL de tu Linkedin</label>
+                    <input type="text" class="form-control" id="imgAc" name="imgAc" [(ngModel)]="imgAc" required placeholder="Se recomienda utilizar imágenes en formato PNG">
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-outline-light justify-content-center"><b>Añadir nueva información</b></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div> 

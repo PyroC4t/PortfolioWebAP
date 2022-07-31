@@ -3,31 +3,33 @@
        <p class="titles">Acerca de mi</p> 
     </div>
 
+    <div class="col-lg-12 text-center">
+        <button type="button" class="btn btn-light btn-lg" routerLink="/nuevaInfo" *ngIf="isLogged"><b>Añadir Información</b></button>
+    </div>
+
     <div class="row center">
         <div class="col-sm-4 col-md-3 col-xl-3 flex">
             <img src="/assets/FotoPerfil.jpg" class="img-rounded" alt="FotoPerfil">
         </div>
         <div class="col-sm-6 col-md-8 col-xl-8 cards-about">
-            <h5>{{acerca.titulo}}</h5>
-            <p> {{acerca.descripcion}}</p>
+            <h5>{{acercade.tituloAc}}</h5>
+            <p>{{acercade.descripcionAc}}</p>
             <br>
             <div class="row center">
                 <div class="cards-icon">
-                    <a href="https:www.facebook.com"><i class="fa-brands fa-facebook home-icons"></i></a>
-                    <h6>Facebook</h6>
-                </div>
-                <div class="cards-icon">
-                    <a href="https:www.instagram.com"><i class="fa-brands fa-instagram home-icons"></i></a>
+                    <a href="https://{{acercade.linkiAc}}"><i class="fa-brands fa-instagram home-icons"></i></a>
                     <h6>Instagram</h6>
                 </div>
                 <div class="cards-icon">
-                    <a href="https:www.github.com"><i class="fa-brands fa-github home-icons"></i></a>
+                    <a href="https://{{acercade.linkgAc}}"><i class="fa-brands fa-github home-icons"></i></a>
                     <h6>Github</h6>
                 </div>
                 <div class="cards-icon">
-                    <a href="https:www.linkedin.com"><i class="fa-brands fa-linkedin home-icons"></i></a>
+                    <a href="https://{{acercade.linklAc}}"><i class="fa-brands fa-linkedin home-icons"></i></a>
                     <h6>Linkedin</h6>
                 </div>
+                <button class="btn btn-dark" routerLink="/editInfo/{{acercade.id}}" *ngIf="isLogged"><i class="icon bi bi-pencil-fill"></i><b> Editar</b></button>
+                <button class="btn btn-dark" (click)="delete(acercade.id)" *ngIf="isLogged"><i class="icon bi bi-trash-fill"></i><b> Borrar</b></button>
             </div>
         </div>
     </div>

@@ -1,0 +1,27 @@
+.editUser {
+    background: rgb(0, 70, 190);
+    height: 100vh;
+    }
+
+form{
+    color: white;
+}
+
+.cards-section{
+    background-color: rgba(37, 117, 252, 1);
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100;
+    height: auto;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0.5rem;
+}
+
+button{
+    margin: 2rem 1rem 0.1rem 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;   
+}

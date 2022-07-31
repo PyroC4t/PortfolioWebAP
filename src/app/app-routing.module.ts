@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.component';
+import { NewAcercadeComponent } from './componentes/acerca-de/new-acercade.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+import { EditUserComponent } from './componentes/header/edit-user.component';
+import { NewUserComponent } from './componentes/header/new-user.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
@@ -25,7 +29,11 @@ const routes: Routes = [
   {path: 'nuevaSkill', component: NewSkilldgComponent},
   {path: 'editSkilldg/:id', component: EditSkilldgComponent},
   {path: 'nuevaSkilldev', component: NewSkilldevComponent},
-  {path: 'editSkilldev/:id', component: EditSkilldevComponent}
+  {path: 'editSkilldev/:id', component: EditSkilldevComponent},
+  {path: 'nuevaInfo', component: NewAcercadeComponent},
+  {path: 'editInfo/:id', component: EditAcercadeComponent},
+  {path: 'nuevoUsuario', component: NewUserComponent},
+  {path: 'editUser/:id', component: EditUserComponent}
 ];
 
 @NgModule({

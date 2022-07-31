@@ -22,7 +22,7 @@
                                 <div class="skill">
                                     <div class="skill-name">{{Skilldg.nombreSkill}}</div>
                                     <div class="skill-bar">
-                                        <div class="skill-per" per="90%" style="max-width:{{Skilldg.porcentajeSkill}}%;"></div>
+                                        <div class="skill-per" per="90%" style="max-width:{{Skilldg.porcentajeSkill}}%"></div>
                                     </div>
                                     <button class="btn btn-dark" routerLink="/editSkilldg/{{Skilldg.id}}" *ngIf="isLogged"><i class="icon bi bi-pencil-fill"></i><b> Editar</b></button>
                                     <button class="btn btn-dark" (click)="delete(Skilldg.id)" *ngIf="isLogged"><i class="icon bi bi-trash-fill"></i><b> Borrar</b></button>
