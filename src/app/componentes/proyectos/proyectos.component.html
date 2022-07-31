@@ -1,10 +1,10 @@
 <div class="container">
-    <div class="col-sm">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <h4 class="titles">Proyectos</h4>
     </div>
     
-    <div class="col-lg-12 py-3 text-center">
-        <button type="button" class="btn btn-light btn-lg" routerLink="/nuevopro" *ngIf="isLogged"><b>Añadir proyecto</b></button>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 py-3 text-center">
+        <button type="button" class="btn btn-outline-light btn-lg" routerLink="/nuevopro" *ngIf="isLogged"><b>Añadir nuevo proyecto</b></button>
     </div>
 
     <div class="container py-3" *ngFor="let Proyecto of pro">
@@ -12,7 +12,7 @@
             <article>
                 <img src="/assets/imgHeader.jpg" alt="imgProyecto">
                 <div class="text">
-                    <h4>{{Proyecto.nombrePro}}</h4>
+                    <h5>{{Proyecto.nombrePro}}</h5>
                     <p>{{Proyecto.descripcionPro}}</p>
                     <a href="https://{{Proyecto.enlacesitePro}}"><button><i class="fa-solid fa-link"></i></button></a>
                     <a href="https://{{Proyecto.enlacerepoPro}}"><button><i class="fa-brands fa-github"></i></button></a>

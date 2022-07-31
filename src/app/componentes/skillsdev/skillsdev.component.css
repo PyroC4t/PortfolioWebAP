@@ -1,14 +1,27 @@
 .icon{
     font-size: 20px;
-    margin: 0px 10px 10px 5px;
+    margin: 10px 10px;
     align-items: center;
 }
 
+.iconitem{
+    font-size: 75px;
+}
+
 button{
+    background-color: black;
+    color: white;
+    margin: 20px 10px 25px 0px;
+    padding: 8px 20px;
+    border-radius: 0.7rem;
+    align-items: center;
+}
+
+.btnedit{
     background-color: black;
     color: white;
     margin: 10px 1px 10px 10px;
     padding: 5px 10px;
     border-radius: 0.7rem;
     align-items: center;
-} 
+}

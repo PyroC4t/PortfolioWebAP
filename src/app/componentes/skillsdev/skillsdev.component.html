@@ -1,35 +1,32 @@
 <div class="container">
     <div class="container">
+
         <p class="subtitles">Desarrollador web</p>
 
-        <div class="col-lg-12 text-center">
-            <button type="button" class="btn btn-light btn-lg" routerLink="/nuevaSkilldev" *ngIf="isLogged" ><b>Añadir Skill</b></button>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+            <button type="button" class="btn btn-light btn-lg" routerLink="/nuevaSkilldev" *ngIf="isLogged" ><b>Añadir nueva Skill</b></button>
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-sm-8 cards-skills">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 cards-skills">
                 <p class="titles-skill">Full Stack developer Jr.</p>
 
-                <div class="col-sm">
-                    <!-- <div class="row"> *este row separa en 2 columnas -->
-                        <div class="col-sm flex-skillpb" *ngFor="let Skilldev of skidev">
-                            <i class="{{Skilldev.iconSkidev}}"></i>
-                            <div class="skills">
-                                <div class="skill">
-                                    <div class="skill-name">{{Skilldev.nombreSkidev}}</div>
-                                    <div class="skill-bar">
-                                        <div class="skill-per" per="90%" style="max-width:{{Skilldev.porcentajeSkidev}}%"></div>
-                                    </div>
-                                    <button class="btn btn-dark" routerLink="/editSkilldev/{{Skilldev.id}}" *ngIf="isLogged"><i class="icon bi bi-pencil-fill"></i><b> Editar</b></button>
-                                    <button class="btn btn-dark" (click)="delete(Skilldev.id)" *ngIf="isLogged"><i class="icon bi bi-trash-fill"></i><b> Borrar</b></button>
-                                </div>
-                             </div>
+                <div class="flex-skillpb" *ngFor="let Skilldev of skidev">
+                    <i class="iconitem {{Skilldev.iconSkidev}}"></i>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">{{Skilldev.nombreSkidev}}</div>
+                            <div class="skill-bar">
+                                <div class="skill-perdev" style="max-width:{{Skilldev.porcentajeSkidev}}%"></div>
+                            </div>
+                            <button class="btnedit btn-dark" routerLink="/editSkilldev/{{Skilldev.id}}" *ngIf="isLogged"><i class="icon bi bi-pencil-fill"></i></button>
+                            <button class="btnedit btn-dark" (click)="delete(Skilldev.id)" *ngIf="isLogged"><i class="icon bi bi-trash-fill"></i></button>
                         </div>
-                    <!-- </div> -->   
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 </div>
-<br>
 <br>

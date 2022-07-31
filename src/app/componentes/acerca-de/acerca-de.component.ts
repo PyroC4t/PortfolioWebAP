@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { acerca } from 'src/app/model/acerca.model';
 import { Acercade } from 'src/app/model/acercade';
-import { AcercaService } from 'src/app/servicios/acerca.service';
 import { ServiceAcercadeService } from 'src/app/servicios/service-acercade.service';
 import { TokenService } from 'src/app/servicios/token.service';
 
@@ -11,7 +9,7 @@ import { TokenService } from 'src/app/servicios/token.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  acercade: Acercade = new Acercade ("","","","","","");
+  acercade: Acercade [] = [];
 
   constructor(private serviceAcercade: ServiceAcercadeService, private tokenService: TokenService) { }
 

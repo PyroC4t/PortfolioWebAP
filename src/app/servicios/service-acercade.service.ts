@@ -11,8 +11,8 @@ export class ServiceAcercadeService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public lista(): Observable<Acercade>{
-    return this.httpClient.get<Acercade>(this.aceURL + 'lista');
+  public lista(): Observable<Acercade[]>{
+    return this.httpClient.get<Acercade[]>(this.aceURL + 'lista');
   }
 
   public detail(id: number): Observable<Acercade>{

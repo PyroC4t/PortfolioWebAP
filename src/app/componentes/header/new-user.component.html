@@ -6,24 +6,24 @@
                 <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
             </div>
 
-            <h6 class="text-center">Completar el formulario para añadir una nueva sección</h6>
+            <h6 class="text-center">Completar el formulario para añadir un nuevo usuario</h6>
 
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreUser">Nombre del usuario</label>
-                    <input type="text" class="form-control" id="nombreUser" name="nombreUser" [(ngModel)]="nombreUser" required placeholder="Ej: programador">
+                    <input type="text" class="form-control" id="nombreUser" name="nombreUser" [(ngModel)]="nombreUser" required placeholder="Ej: Juan">
                 </div>
                 <div class="form-group">
                     <label for="apellidoUser">Apellido del usuario</label>
-                    <input type="text" class="form-control" id="apellidoUser" name="apellidoUser" [(ngModel)]="apellidoUser" required placeholder="Ej: RockStar">
+                    <input type="text" class="form-control" id="apellidoUser" name="apellidoUser" [(ngModel)]="apellidoUser" required placeholder="Ej: Perez">
                 </div>
                 <div class="form-group">
-                    <label for="imgUser">Cargo</label>
-                    <input type="text" class="form-control" id="imgUser" name="imgUser" [(ngModel)]="imgUser" required placeholder="Ej: Programador Senior">
+                    <label for="imgUser">Imagen de perfil</label>
+                    <input type="text" class="form-control" id="imgUser" name="imgUser" [(ngModel)]="imgUser" required placeholder="Imagenes en formato JPG, PNG.">
                 </div>
 
                 <div class="text-center">
-                    <button class="btn btn-outline-light justify-content-center"><b>Añadir nueva Usuario</b></button>
+                    <button class="btn btn-outline-light justify-content-center"><b>Añadir nuevo Usuario</b></button>
                 </div>
 
             </form>
