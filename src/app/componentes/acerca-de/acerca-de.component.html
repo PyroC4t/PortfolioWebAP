@@ -9,7 +9,7 @@
 
     <div class="row center" *ngFor="let Acercade of acercade">
         <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 flex">
-            <img src="/assets/FotoPerfil.jpg" class="img-rounded" alt="FotoPerfil">
+            <img src={{Acercade.imgAc}} class="img-rounded" alt="FotoPerfil">
         </div>
 
         <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-6 cards-about">
@@ -18,18 +18,16 @@
             <br>
             <div class="row center">
                 <div class="cards-icon">
-                    <a href="https://{{Acercade.linkiAc}}"><i class="fa-brands fa-instagram home-icons"></i></a>
-                    <!-- <h6>Instagram</h6> -->
+                    <a href={{Acercade.linkiAc}}><i class="fa-brands fa-instagram home-icons"></i></a>
                 </div>
                 <div class="cards-icon">
-                    <a href="https://{{Acercade.linkgAc}}"><i class="fa-brands fa-github home-icons"></i></a>
-                    <!-- <h6>Github</h6> -->
+                    <a href={{Acercade.linkgAc}}><i class="fa-brands fa-github home-icons"></i></a>
                 </div>
                 <div class="cards-icon">
-                    <a href="https://{{Acercade.linklAc}}"><i class="fa-brands fa-linkedin home-icons"></i></a>
-                    <!-- <h6>Linkedin</h6> -->
+                    <a href={{Acercade.linklAc}}><i class="fa-brands fa-linkedin home-icons"></i></a>
                 </div>
             </div>
+
             <div class="text-center py-4">
                 <button class="btnedit btn-outline-light" routerLink="/editInfo/{{Acercade.id}}" *ngIf="isLogged"><i class="icon bi bi-pencil-fill"></i><b> Editar</b></button>
                 <button class="btnedit btn-outline-light" (click)="delete(Acercade.id)" *ngIf="isLogged"><i class="icon bi bi-trash-fill"></i><b> Borrar</b></button>

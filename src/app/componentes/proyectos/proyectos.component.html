@@ -10,7 +10,7 @@
     <div class="container py-3" *ngFor="let Proyecto of pro">
         <main class="grid">
             <article>
-                <img src="/assets/imgHeader.jpg" alt="imgProyecto">
+                <img src={{Proyecto.imgPro}} alt="imgProyecto">
                 <div class="text">
                     <h5>{{Proyecto.nombrePro}}</h5>
                     <p>{{Proyecto.descripcionPro}}</p>
@@ -23,4 +23,4 @@
         </main>
     </div>
 </div>
-
+<br>

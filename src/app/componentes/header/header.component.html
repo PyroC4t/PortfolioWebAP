@@ -29,7 +29,7 @@
          </div>
 
          <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 home-img text-center">
-             <img src="/assets/imgHeader.jpg" alt="imagen" width="100%">
+             <img src={{User.imgUser}} alt="imagen" width="100%">
             <button class="btnedit btn-outline-light" routerLink="/editUser/{{User.id}}" *ngIf="isLogged"><i class="iconedit bi bi-pencil-fill"></i><b> Editar</b></button>
             <button class="btnedit btn-outline-light" (click)="delete(User.id)" *ngIf="isLogged"><i class="iconedit bi bi-trash-fill"></i><b> Borrar</b></button> 
          </div>
