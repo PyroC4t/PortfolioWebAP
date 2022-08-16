@@ -8,23 +8,26 @@
     </div>
 
     <div class="row center" *ngFor="let Acercade of acercade">
-        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-3 flex">
+        <div class="col-5 col-sm-5 col-md-4 col-lg-4 col-xl-3 flex borderanimate">
+            <span></span>
             <img src={{Acercade.imgAc}} class="img-rounded" alt="FotoPerfil">
         </div>
 
-        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-6 cards-about">
-            <h5>{{Acercade.tituloAc}}</h5>
+        <div class="col-7 col-sm-7 col-md-8 col-lg-8 col-xl-6 cards-about">
+            <h4>{{Acercade.tituloAc}}</h4>
             <p>{{Acercade.descripcionAc}}</p>
             <br>
             <div class="row center">
-                <div class="cards-icon">
-                    <a href={{Acercade.linkiAc}}><i class="fa-brands fa-instagram home-icons"></i></a>
-                </div>
-                <div class="cards-icon">
-                    <a href={{Acercade.linkgAc}}><i class="fa-brands fa-github home-icons"></i></a>
-                </div>
-                <div class="cards-icon">
-                    <a href={{Acercade.linklAc}}><i class="fa-brands fa-linkedin home-icons"></i></a>
+                <div class="gridcard d-flex">
+                    <article>
+                        <a href={{Acercade.linkiAc}}><i class="fa-brands fa-instagram home-icons"></i></a>
+                    </article>
+                    <article>
+                        <a href={{Acercade.linkgAc}}><i class="fa-brands fa-github home-icons"></i></a>
+                    </article>
+                    <article>
+                        <a href={{Acercade.linklAc}}><i class="fa-brands fa-linkedin home-icons"></i></a>
+                    </article>
                 </div>
             </div>
 

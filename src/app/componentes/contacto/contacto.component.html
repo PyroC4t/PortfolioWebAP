@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="col-sm">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <h4 class="titles">Contacto</h4>
     </div>
 
@@ -19,13 +19,32 @@
                     <a href="https://www.linkedin.com/in/luis-serrano-devp"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
+
             <div class="right">
                 <h2 style="color:rgb(0, 195, 255)">Contactame</h2>
                 <input type="text" class="field" placeholder="Nombre completo">
                 <input type="email" class="field" placeholder="Email">
                 <textarea class="field area" placeholder="Mensaje"></textarea>
-                <button class="btncontact">Send</button>
+                <button class="btncontact" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Send</button>
             </div>
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content background">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Contacto</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Proximamente - Sitio en construcción.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
