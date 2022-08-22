@@ -10,12 +10,12 @@
     <div class="container py-3" *ngFor="let Proyecto of pro">
         <main class="grid">
             <article>
-                <img src={{Proyecto.imgPro}} alt="imgProyecto">
+                <img src={{Proyecto.imgPro}} alt="imagen proyecto">
                 <div class="text">
                     <h5>{{Proyecto.nombrePro}}</h5>
                     <p>{{Proyecto.descripcionPro}}</p>
-                    <a href="https://{{Proyecto.enlacesitePro}}"><button><i class="fa-solid fa-link"></i></button></a>
-                    <a href="https://{{Proyecto.enlacerepoPro}}"><button><i class="fa-brands fa-github"></i></button></a>
+                    <a href={{Proyecto.enlacesitePro}}><button><i class="fa-solid fa-link"></i></button></a>
+                    <a href={{Proyecto.enlacerepoPro}}><button><i class="fa-brands fa-github"></i></button></a>
                 </div>
                 <button class="btnedit btn-dark" routerLink="/editpro/{{Proyecto.id}}" *ngIf="isLogged"><i class="bi bi-pencil-fill iconedit"></i><b> Editar</b></button>
                 <button class="btnedit btn-dark" (click)="delete(Proyecto.id)" *ngIf="isLogged"><i class="bi bi-trash-fill iconedit"></i><b> Borrar</b></button>
@@ -23,4 +23,4 @@
         </main>
     </div>
 </div>
-<br>
+<br> 

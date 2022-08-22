@@ -3,14 +3,12 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item-left">
             <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
             <img src="./assets/Argentina-programa-logo.png" alt="AP logo" width="110px"></a>
-            <h6 style="color:white"></h6>
         </div>
 
         <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item-right">
             <button type="button" class="btn btn-outline-light btn bi bi-door-open-fill" (click)="login()" *ngIf="!isLogged"> Login</button>
             <button type="button" class="btn btn-outline-light btn bi bi bi-door-closed-fill" (click)="onLogOut()" *ngIf="isLogged" > Logout</button>
-        </div>
-          
+        </div>      
     </nav>
 </div>
 
@@ -19,8 +17,8 @@
 </div>
 
 <div class="container">
-    <div class="row home-flex" *ngFor="let User of user">
-         <div class="col-8 col-sm-8 col-md-8 col-lg-6 col-xl-6 home-text">
+    <div class="row head" *ngFor="let User of user">
+         <div class="col-10 col-sm-10 col-md-8 col-lg-6 col-xl-6 head-text">
              <h5>¡Hola Humano, soy {{User.nombreUser}} {{User.apellidoUser}}, Bienvenido a mi Portfolio Web!.</h5>
              <h1>Full Stack Web Developer Jr. <i>& Diseño grafico</i></h1>
              <h5>Full Stack Web Developer Jr. desde 2022</h5>
@@ -28,13 +26,10 @@
              <img src="/assets/Argentina-programa-logo-color.png" alt="AP logo" width="120">
          </div>
 
-         <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 home-img text-center">
+         <div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 head-img text-center">
              <img src={{User.imgUser}} alt="imagen" width="100%">
             <button class="btnedit btn-outline-light" routerLink="/editUser/{{User.id}}" *ngIf="isLogged"><i class="iconedit bi bi-pencil-fill"></i><b> Editar</b></button>
             <button class="btnedit btn-outline-light" (click)="delete(User.id)" *ngIf="isLogged"><i class="iconedit bi bi-trash-fill"></i><b> Borrar</b></button> 
          </div>
- 
     </div>
  </div>
- <br>
- <br>

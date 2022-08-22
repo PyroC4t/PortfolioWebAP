@@ -1,3 +1,79 @@
+.cards-skills{
+    background-color: rgb(0, 195, 255);
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem 0.5rem;
+}
+
+.titles-skill{
+    font-family: Helvetica;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.flex-skillpb {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+
+img.iconskill {
+    margin-bottom:-25px;
+    width: 60px;
+    height: 60px;
+}
+
+.skills {
+    width: 100%;
+    max-width: 650px;
+    padding: 0 20px;
+}
+
+.skill-name {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 600;   
+    color: #ffffff;
+    margin: 10px 5px;
+    padding-top: 0.5rem;
+}
+
+.skill-bar {
+    position: relative;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 4px 2px rgba(0,0,0,0.5),
+                      0px 2px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.skill-perdev {
+    height: 20px;
+    background: #fd0059;
+    border-radius: 10px;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 2s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
 .icon{
     font-size: 20px;
     margin: 10px 10px;
