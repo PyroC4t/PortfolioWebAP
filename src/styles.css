@@ -49,15 +49,50 @@ li{
     list-style-type: square;
 }
 
-.titles{
+.titles {
     font-family: Helvetica;
+    position: relative;
+    display: block;
     font-size: 60px;
     line-height: 60px;
-    font-weight: bold;
     color: rgb(0, 195, 255);
+    font-weight: bold;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    margin: 0 10px;
+    padding: 1rem;
     justify-content: center;
     text-align: center;
-    padding: 1rem;
+}
+
+.titles:hover{
+    color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-20px);
+    transition-delay: 0s;
+}
+
+.titles::before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: -15px;
+    pointer-events: none;
+    z-index: 1;
+    font-size: 15px;
+    color: #08FDD8;
+    font-weight: 600;
+    letter-spacing: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    text-shadow: 0 0 10px #08FDD8,
+                 0 0 30px #08FDD8,
+                 0 0 80px #08FDD8;
+    margin: 0 5px;
+}
+
+.titles:hover::before{
+    letter-spacing: 2px;
+    opacity: 1;
+    transition-delay: 0.25s;
 }
 
 .subtitles{
