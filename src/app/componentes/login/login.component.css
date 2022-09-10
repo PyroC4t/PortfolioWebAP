@@ -1,17 +1,18 @@
 section {
     background: rgb(0, 70, 190);
     height: 100vh;
+    padding: 100px 30px;
 }
 
 .card{
-    background-color:rgba(37, 117, 252, 1);
+    background-color:#006efd;
     padding: 2rem;
     color:#fff;
     max-width: 700px;
     border-radius: 20px;
     justify-content: center;
     text-align: center;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 p{
@@ -69,7 +70,7 @@ p{
     transform: translateY(-13px);
     font-size: 0.75em;
     padding: 0 10px;
-    background: rgba(37, 117, 252, 1);
+    background: #006efd;
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
     letter-spacing: 0.2em;
@@ -78,7 +79,7 @@ p{
 .inputBox:nth-child(2) input:valid ~ span,
 .inputBox:nth-child(2) input:focus ~ span{
     background: #fff;
-    color:rgba(37, 117, 252, 1);
+    color:#006efd;
     border-radius: 3px;
 }
 

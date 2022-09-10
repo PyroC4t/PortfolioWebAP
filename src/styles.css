@@ -29,10 +29,6 @@ i {
     padding-bottom: 0.5rem;
 }
 
-section{
-    padding: 50px 14%;
-}
-
 .center {
     justify-content: center;
     align-items: center;
@@ -50,11 +46,11 @@ li{
 }
 
 .titles {
-    font-family: Helvetica;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     position: relative;
     display: block;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 50px;
     color: rgb(0, 195, 255);
     font-weight: bold;
     transition: 0.5s;

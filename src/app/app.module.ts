@@ -30,6 +30,7 @@ import { NewAcercadeComponent } from './componentes/acerca-de/new-acercade.compo
 import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.component';
 import { NewUserComponent } from './componentes/header/new-user.component';
 import { EditUserComponent } from './componentes/header/edit-user.component';
+import { MenuComponent } from './componentes/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { EditUserComponent } from './componentes/header/edit-user.component';
     NewAcercadeComponent,
     EditAcercadeComponent,
     NewUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
