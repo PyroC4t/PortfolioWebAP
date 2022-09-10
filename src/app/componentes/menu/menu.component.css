@@ -18,7 +18,7 @@ ul li{
 }
 
 ul li a{
-    font-family: 'Poppins', Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif, Helvetica;
     position: relative;
     display: block;
     text-decoration: none;

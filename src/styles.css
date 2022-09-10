@@ -46,7 +46,7 @@ li{
 }
 
 .titles {
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif, Helvetica;
     position: relative;
     display: block;
     font-size: 50px;
