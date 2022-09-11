@@ -21,7 +21,14 @@
 }
 
 .cards-acerca h4{
+    font-family: 'Manrope', sans-serif;
     color: #08FDD8;
+}
+
+.cards-acerca p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .img-rounded {

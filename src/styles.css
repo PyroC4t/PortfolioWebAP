@@ -46,13 +46,13 @@ li{
 }
 
 .titles {
-    font-family: 'Poppins', sans-serif, Helvetica;
+    font-family: 'Inter', sans-serif;
     position: relative;
     display: block;
     font-size: 50px;
     line-height: 50px;
     color: rgb(0, 195, 255);
-    font-weight: bold;
+    font-weight: 1000;
     transition: 0.5s;
     transition-delay: 0.5s;
     margin: 0 10px;
@@ -92,9 +92,9 @@ li{
 }
 
 .subtitles{
-    font-family: Helvetica;
-    font-size: 40px;
-    line-height: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
     font-weight: bold;
     text-align: center;
     color: #08FDD8;

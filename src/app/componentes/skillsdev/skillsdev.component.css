@@ -9,9 +9,9 @@
 }
 
 .titles-skill{
-    font-family: Helvetica;
-    font-size: 30px;
-    line-height: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
@@ -38,7 +38,7 @@ img.iconskill {
 }
 
 .skill-name {
-    font-family: Helvetica;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;   
     color: #ffffff;
