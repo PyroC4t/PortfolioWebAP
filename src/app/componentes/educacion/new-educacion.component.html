@@ -1,40 +1,41 @@
-<div class="container-fluid newEdu d-flex justify-content-center">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
-        <div class="cards-section">
-
-            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
-                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+<div class="container-fluid">
+    <div class="row backgroundForms justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+            <div class="cards-section">
+    
+                <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                    <img src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+                </div>
+    
+                <h5>Completar el formulario para añadir una nueva sección</h5>
+    
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreEdu">Nombre de educación</label>
+                        <input type="text" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="nombreEdu" required="required" placeholder="Ej: Técnico en comunicaciones.">
+                    </div>
+                    <div class="form-group">
+                        <label for="institutoEdu">Nombre de la institución</label>
+                        <input type="text" class="form-control" id="institutoEdu" name="institutoEdu" [(ngModel)]="institutoEdu" required="required" placeholder="Ej: Universidad Tecnológica Nacional.">
+                    </div>
+                    <div class="form-group">
+                        <label for="tituloEdu">Título, acreditación o certificación</label>
+                        <input type="text" class="form-control" id="tituloEdu" name="tituloEdu" [(ngModel)]="tituloEdu" required="required" placeholder="Ej: Lic. en comunicaciones.">
+                    </div>
+                    <div class="form-group">
+                        <label for="periodoEdu">Período de cursado</label>
+                        <input type="text" class="form-control" id="periodoEdu" name="periodoEdu" [(ngModel)]="periodoEdu" required="required" placeholder="Ej: 2010 - 2020">
+                    </div>
+                    <div class="form-group">
+                        <label for="imgEdu">URL imagen de la institución</label>
+                        <input type="text" class="form-control" id="imgEdu" name="imgEdu" [(ngModel)]="imgEdu" required="required" placeholder="Ej: https://www.pictures.com/imagen.">
+                    </div>
+    
+                    <div class="text-center">
+                        <button class="btn btn-outline-light justify-content-center"><b>Añadir nueva educación</b></button>
+                    </div>    
+                </form>
             </div>
-
-            <h6 class="text-center">Completar el formulario para añadir una nueva sección</h6>
-
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreEdu">Nombre de educación</label>
-                    <input type="text" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="nombreEdu" required placeholder="Ej: Técnico en comunicaciones.">
-                </div>
-                <div class="form-group">
-                    <label for="institutoEdu">Nombre de la institución</label>
-                    <input type="text" class="form-control" id="institutoEdu" name="institutoEdu" [(ngModel)]="institutoEdu" required placeholder="Ej: Universidad Tecnológica Nacional.">
-                </div>
-                <div class="form-group">
-                    <label for="tituloEdu">Título, acreditación o certificación</label>
-                    <input type="text" class="form-control" id="tituloEdu" name="tituloEdu" [(ngModel)]="tituloEdu" required placeholder="Ej: Lic. en comunicaciones.">
-                </div>
-                <div class="form-group">
-                    <label for="periodoEdu">Período de cursado</label>
-                    <input type="text" class="form-control" id="periodoEdu" name="periodoEdu" [(ngModel)]="periodoEdu" required placeholder="Ej: 2010 - 2020">
-                </div>
-                <div class="form-group">
-                    <label for="imgEdu">URL imagen</label>
-                    <input type="text" class="form-control" id="imgEdu" name="imgEdu" [(ngModel)]="imgEdu" required placeholder="Se recomienda utilizar imágenes en formato PNG.">
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-outline-light justify-content-center"><b>Añadir nueva educación</b></button>
-                </div>
-
-            </form>
         </div>
     </div>
 </div>

@@ -1,45 +1,47 @@
-<div class="container-fluid newAcerca d-flex justify-content-center">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
-        <div class="cards-section">
-
-            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
-                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+<div class="container-fluid">
+    <div class="row backgroundForms justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+            <div class="cards-section">
+    
+                <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                    <img src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+                </div>
+    
+                <h5>Completar el formulario para añadir una nueva sección</h5>
+    
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="tituloAc">Título de la información</label>
+                        <input type="text" class="form-control" id="tituloAc" name="tituloAc" [(ngModel)]="tituloAc" required="required" placeholder="Ej: Programador, desarrollador web">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionAc">Descripción sobre vos</label>
+                        <input type="text" class="form-control" id="descripcionAc" name="descripcionAc" [(ngModel)]="descripcionAc" required="required" placeholder="Ej: Breve descripción sobre ti">
+                    </div>
+                    <div class="form-group">
+                        <label for="linkiAc">URL de tu Instagram</label>
+                        <input type="text" class="form-control" id="linkiAc" name="linkiAc" [(ngModel)]="linkiAc" required="required" placeholder="Ej: https://www.instagram.com/perfil">
+                    </div>
+                    <div class="form-group">
+                        <label for="linkgAc">URL de tu Github</label>
+                        <input type="text" class="form-control" id="linkgAc" name="linkgAc" [(ngModel)]="linkgAc" required="required" placeholder="Ej: https://www.github.com/repo">
+                    </div>
+                    <div class="form-group">
+                        <label for="linklAc">URL de tu Linkedin</label>
+                        <input type="text" class="form-control" id="linklAc" name="linklAc" [(ngModel)]="linklAc" required="required" placeholder="Ej: https://www.linkedin.com/perfil">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="imgAc">URL Imagen de perfil</label>
+                        <input type="text" class="form-control" id="imgAc" name="imgAc" [(ngModel)]="imgAc" required="required" placeholder="Ej: https://www.pictures.com/imagen">
+                    </div>
+    
+                    <div class="text-center">
+                        <button class="btn btn-outline-light justify-content-center"><b>Añadir nueva información</b></button>
+                    </div>
+    
+                </form>
             </div>
-
-            <h6 class="text-center">Completar el formulario para añadir una nueva sección</h6>
-
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="tituloAc">Titulo de la información</label>
-                    <input type="text" class="form-control" id="tituloAc" name="tituloAc" [(ngModel)]="tituloAc" required placeholder="Ej: Programador, desarrollador web">
-                </div>
-                <div class="form-group">
-                    <label for="descripcionAc">descripcion sobre mi</label>
-                    <input type="text" class="form-control" id="descripcionAc" name="descripcionAc" [(ngModel)]="descripcionAc" required placeholder="Ej: Breve descripción sobre ti">
-                </div>
-                <div class="form-group">
-                    <label for="linkiAc">URL de tu Instagram</label>
-                    <input type="text" class="form-control" id="linkiAc" name="linkiAc" [(ngModel)]="linkiAc" required placeholder="Ej: https://www.instagram.com/perfil">
-                </div>
-                <div class="form-group">
-                    <label for="linkgAc">URL de tu Github</label>
-                    <input type="text" class="form-control" id="linkgAc" name="linkgAc" [(ngModel)]="linkgAc" required placeholder="Ej: https://www.github.com/repo">
-                </div>
-                <div class="form-group">
-                    <label for="linklAc">URL de tu Linkedin</label>
-                    <input type="text" class="form-control" id="linklAc" name="linklAc" [(ngModel)]="linklAc" required placeholder="Ej: https://www.linkedin.com/perfil">
-                </div>
-
-                <div class="form-group">
-                    <label for="imgAc">URL Imagen de perfil</label>
-                    <input type="text" class="form-control" id="imgAc" name="imgAc" [(ngModel)]="imgAc" required placeholder="Ej: https://www.pictures.com/">
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-outline-light justify-content-center"><b>Añadir nueva información</b></button>
-                </div>
-
-            </form>
         </div>
     </div>
 </div> 

@@ -100,3 +100,10 @@ li{
     color: #08FDD8;
     padding: 1rem;
 }
+
+/* background de formularios de nueva sección y edición de información */
+
+.backgroundForms {
+    background: #0046be;
+    min-height: 100vh;
+}
