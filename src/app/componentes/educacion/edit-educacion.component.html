@@ -1,40 +1,41 @@
-<div class="container-fluid edit d-flex justify-content-center" *ngIf="eduedit">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
-        <div class="cards-section">
-
-            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
-                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+<div class="container-fluid">
+    <div class="row backgroundForms justify-content-center" *ngIf="eduedit">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+            <div class="cards-section">
+    
+                <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                    <img src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+                </div>
+    
+                <h5>Completar el formulario para editar la información</h5>
+    
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreEdu">Nombre de educación</label>
+                        <input type="text" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="eduedit.nombreEdu" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="institutoEdu">Nombre de la institución</label>
+                        <input type="text" class="form-control" id="institutoEdu" name="institutoEdu" [(ngModel)]="eduedit.institutoEdu" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="tituloEdu">Título, acreditación o certificación</label>
+                        <input type="text" class="form-control" id="tituloEdu" name="tituloEdu" [(ngModel)]="eduedit.tituloEdu" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="periodoEdu">Período</label>
+                        <input type="text" class="form-control" id="periodoEdu" name="periodoEdu" [(ngModel)]="eduedit.periodoEdu" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="imgEdu">URL imagen de la institución</label>
+                        <input type="text" class="form-control" id="imgEdu" name="imgEdu" [(ngModel)]="eduedit.imgEdu" required="required">
+                    </div>
+    
+                    <div class="text-center">
+                        <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
+                    </div>   
+                </form>
             </div>
-
-            <h6 class="text-center">Completar el formulario para editar la información correctamente</h6>
-
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreEdu">Educación</label>
-                    <input type="text" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="eduedit.nombreEdu" required>
-                </div>
-                <div class="form-group">
-                    <label for="institutoEdu">Nombre de la institución</label>
-                    <input type="text" class="form-control" id="institutoEdu" name="institutoEdu" [(ngModel)]="eduedit.institutoEdu" required>
-                </div>
-                <div class="form-group">
-                    <label for="tituloEdu">Título, acreditación o certificación</label>
-                    <input type="text" class="form-control" id="tituloEdu" name="tituloEdu" [(ngModel)]="eduedit.tituloEdu" required>
-                </div>
-                <div class="form-group">
-                    <label for="periodoEdu">Período</label>
-                    <input type="text" class="form-control" id="periodoEdu" name="periodoEdu" [(ngModel)]="eduedit.periodoEdu" required>
-                </div>
-                <div class="form-group">
-                    <label for="imgEdu">URL imagen</label>
-                    <input type="text" class="form-control" id="imgEdu" name="imgEdu" [(ngModel)]="eduedit.imgEdu" required>
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
-                </div>
-
-            </form>
         </div>
     </div>
 </div>

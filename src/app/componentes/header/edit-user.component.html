@@ -1,32 +1,33 @@
-<div class="container-fluid editUser d-flex justify-content-center" *ngIf="usered">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
-        <div class="cards-section">
-
-            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
-                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+<div class="container-fluid">
+    <div class="row backgroundForms justify-content-center" *ngIf="usered">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+            <div class="cards-section">
+    
+                <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                    <img src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+                </div>
+    
+                <h5>Completar el formulario para editar la información</h5>
+    
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreUser">Nombre del usuario</label>
+                        <input type="text" class="form-control" id="nombreUser" name="nombreUser" [(ngModel)]="usered.nombreUser" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidoUser">Apellido del usuario</label>
+                        <input type="text" class="form-control" id="apellidoUser" name="apellidoUser" [(ngModel)]="usered.apellidoUser" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="imgUser">URL Imagen de perfil</label>
+                        <input type="text" class="form-control" id="imgUser" name="imgUser" [(ngModel)]="usered.imgUser" required="required">
+                    </div>
+    
+                    <div class="text-center">
+                        <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
+                    </div>  
+                </form>
             </div>
-
-            <h6 class="text-center">Completar el formulario para editar la información</h6>
-
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreUser">Nombre del usuario</label>
-                    <input type="text" class="form-control" id="nombreUser" name="nombreUser" [(ngModel)]="usered.nombreUser" required>
-                </div>
-                <div class="form-group">
-                    <label for="apellidoUser">Apellido del usuario</label>
-                    <input type="text" class="form-control" id="apellidoUser" name="apellidoUser" [(ngModel)]="usered.apellidoUser" required>
-                </div>
-                <div class="form-group">
-                    <label for="imgUser">URL Imagen de perfil</label>
-                    <input type="text" class="form-control" id="imgUser" name="imgUser" [(ngModel)]="usered.imgUser" required>
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
-                </div>
-
-            </form>
         </div>
     </div>
 </div>

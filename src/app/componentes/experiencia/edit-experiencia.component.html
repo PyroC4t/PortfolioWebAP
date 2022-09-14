@@ -1,39 +1,41 @@
-<div class="container-fluid editExp d-flex justify-content-center" *ngIf="expLab">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
-        <div class="cards-section">
-
-            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
-                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+<div class="container-fluid">
+    <div class="row backgroundForms justify-content-center" *ngIf="expLab">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+            <div class="cards-section">
+    
+                <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                    <img src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+                </div>
+    
+                <h5>Completar el formulario para editar la información correctamente</h5>
+    
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreExp">Nombre de la profesión</label>
+                        <input type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="expLab.nombreExp" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="empresaExp">Nombre de la empresa</label>
+                        <input type="text" class="form-control" id="empresaExp" name="empresaExp" [(ngModel)]="expLab.empresaExp" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="cargoExp">Cargo</label>
+                        <input type="text" class="form-control" id="cargoExp" name="cargoExp" [(ngModel)]="expLab.cargoExp" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionExp">Breve descripción de la actividad</label>
+                        <input type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="expLab.descripcionExp" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="imgExp">URL imagen de la empresa</label>
+                        <input type="text" class="form-control" id="imgExp" name="imgExp" [(ngModel)]="expLab.imgExp" required="required">
+                    </div>
+    
+                    <div class="text-center">
+                        <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
+                    </div>
+                </form>
             </div>
-
-            <h6 class="text-center">Completar el formulario para editar la información correctamente</h6>
-
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreExp">Nombre de la profesión</label>
-                    <input type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="expLab.nombreExp" required>
-                </div>
-                <div class="form-group">
-                    <label for="empresaExp">Nombre de la empresa</label>
-                    <input type="text" class="form-control" id="empresaExp" name="empresaExp" [(ngModel)]="expLab.empresaExp" required>
-                </div>
-                <div class="form-group">
-                    <label for="cargoExp">Cargo</label>
-                    <input type="text" class="form-control" id="cargoExp" name="cargoExp" [(ngModel)]="expLab.cargoExp" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionExp">Descripción de la actividad</label>
-                    <input type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="expLab.descripcionExp" required>
-                </div>
-                <div class="form-group">
-                    <label for="imgExp">URL imagen</label>
-                    <input type="text" class="form-control" id="imgExp" name="imgExp" [(ngModel)]="expLab.imgExp" required>
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
-                </div>
-            </form>
         </div>
     </div>
 </div>

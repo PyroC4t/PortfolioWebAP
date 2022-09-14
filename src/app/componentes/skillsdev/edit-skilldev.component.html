@@ -1,32 +1,33 @@
-<div class="container-fluid editSkilldev d-flex justify-content-center" *ngIf="skilldev">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
-        <div class="cards-section">
-
-            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
-                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+<div class="container-fluid">
+    <div class="row backgroundForms justify-content-center" *ngIf="skilldev">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+            <div class="cards-section">
+    
+                <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                    <img src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+                </div>
+    
+                <h5>Completar el formulario para editar la información</h5>
+    
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreSkidev">Nombre de skill</label>
+                        <input type="text" class="form-control" id="nombreSkidev" name="nombreSkidev" [(ngModel)]="skilldev.nombreSkidev" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="porcentajeSkidev">Porcentaje de skill</label>
+                        <input type="text" class="form-control" id="porcentajeSkidev" name="porcentajeSkidev" [(ngModel)]="skilldev.porcentajeSkidev" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="iconSkidev">URL imagen/icono skill</label>
+                        <input type="text" class="form-control" id="iconSkidev" name="iconSkidev" [(ngModel)]="skilldev.iconSkidev" required="required">
+                    </div>
+    
+                    <div class="text-center">
+                        <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
+                    </div>    
+                </form>
             </div>
-
-            <h6 class="text-center">Completar el formulario para añadir una nueva sección</h6>
-
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreSkidev">Nombre de skill</label>
-                    <input type="text" class="form-control" id="nombreSkidev" name="nombreSkidev" [(ngModel)]="skilldev.nombreSkidev" required>
-                </div>
-                <div class="form-group">
-                    <label for="porcentajeSkidev">Porcentaje de skill</label>
-                    <input type="text" class="form-control" id="porcentajeSkidev" name="porcentajeSkidev" [(ngModel)]="skilldev.porcentajeSkidev" required>
-                </div>
-                <div class="form-group">
-                    <label for="iconSkidev">URL imagen/icono skill</label>
-                    <input type="text" class="form-control" id="iconSkidev" name="iconSkidev" [(ngModel)]="skilldev.iconSkidev" required>
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-outline-light justify-content-center"><b>Actualizar</b></button>
-                </div>
-
-            </form>
         </div>
     </div>
 </div> 

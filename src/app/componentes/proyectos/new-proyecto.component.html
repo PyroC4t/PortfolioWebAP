@@ -1,41 +1,41 @@
-<div class="container-fluid newPro d-flex justify-content-center">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-6 col-xxl-6">
-        <div class="cards-section">
-
-            <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
-                <img class="img-responsive" src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+<div class="container-fluid">
+    <div class="row backgroundForms justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-8 col-xl-8">
+            <div class="cards-section">
+    
+                <div class="d-flex justify-content-center text-center mx-3 mb-4 mt-1 pt-1">
+                    <img src="/assets/Argentina-programa-logo.png" alt="logo" width="140px">
+                </div>
+    
+                <h5>Completar el formulario para añadir una nueva sección</h5>
+    
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombrePro">Nombre del Proyecto</label>
+                        <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="nombrePro" required="required" placeholder="Ej: Argentina Programa portfolio web">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionPro">Descripción del proyecto</label>
+                        <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="descripcionPro" required="required" placeholder="Ej: breve descripción/funcionalidad del proyecto realizado">
+                    </div>
+                    <div class="form-group">
+                        <label for="enlacesitePro">URL del sitio del proyecto</label>
+                        <input type="text" class="form-control" id="enlacesitePro" name="enlacesitePro" [(ngModel)]="enlacesitePro" required="required" placeholder="Ej: URL de la web del proyecto">
+                    </div>
+                    <div class="form-group">
+                        <label for="enlacerepoPro">URL del repositorio en GitHub</label>
+                        <input type="text" class="form-control" id="enlacerepoPro" name="enlacerepoPro" [(ngModel)]="enlacerepoPro" required="required" placeholder="Ej: URL del repositorio del proyecto en GitHub">
+                    </div>
+                    <div class="form-group">
+                        <label for="imgPro">URL imagen del proyecto</label>
+                        <input type="text" class="form-control" id="imgPro" name="imgPro" [(ngModel)]="imgPro" required placeholder="Ej: https://www.pictures.com/imagen">
+                    </div>
+    
+                    <div class="text-center">
+                        <button class="btn btn-outline-light justify-content-center"><b>Añadir nuevo proyecto</b></button>
+                    </div>   
+                </form>
             </div>
-
-            <h6 class="text-center">Completar el formulario para añadir una nueva sección</h6>
-
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombrePro">Nombre del Proyecto</label>
-                    <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="nombrePro" required placeholder="Ej: Argentina Programa portfolio web">
-                </div>
-                <div class="form-group">
-                    <label for="descripcionPro">Descripción del proyecto</label>
-                    <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="descripcionPro" required placeholder="Ej: breve descripción/funcionalidad del proyecto realizado">
-                </div>
-                <div class="form-group">
-                    <label for="enlacesitePro">URL del sitio del proyecto</label>
-                    <input type="text" class="form-control" id="enlacesitePro" name="enlacesitePro" [(ngModel)]="enlacesitePro" required placeholder="Ej: URL de la web del proyecto">
-                </div>
-                <div class="form-group">
-                    <label for="enlacerepoPro">URL del repositorio en GitHub</label>
-                    <input type="text" class="form-control" id="enlacerepoPro" name="enlacerepoPro" [(ngModel)]="enlacerepoPro" required placeholder="Ej: URL del repositorio del proyecto en GitHub">
-                </div>
-                <div class="form-group">
-                    <label for="imgPro">URL de la imagen del proyecto</label>
-                    <input type="text" class="form-control" id="imgPro" name="imgPro" [(ngModel)]="imgPro" required placeholder="Ej: imagen del proyecto">
-                </div>
-
-                <div class="text-center">
-                    <button class="btn btn-outline-light justify-content-center"><b>Añadir nuevo proyecto</b></button>
-                </div>
-
-            </form>
         </div>
     </div>
 </div>
-
