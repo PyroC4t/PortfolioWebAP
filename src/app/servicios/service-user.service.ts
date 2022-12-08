@@ -7,7 +7,8 @@ import { User } from '../model/user';
   providedIn: 'root'
 })
 export class ServiceUserService {
-  useURL = 'https://portfolioapbackend.herokuapp.com/usuario/'
+  useURL = 'http://localhost:8080/usuario/'
+  //useURL = 'https://portfolioapbackend.herokuapp.com/usuario/'
 
   constructor(private httpClient: HttpClient) { }
 

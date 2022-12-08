@@ -7,7 +7,8 @@ import { Skilldg } from '../model/skilldg';
   providedIn: 'root'
 })
 export class ServiceSkilldgService {
-  skillURL = 'https://portfolioapbackend.herokuapp.com/skilldiseno/'
+  skillURL = 'http://localhost:8080/skilldiseno/'
+  //skillURL = 'https://portfolioapbackend.herokuapp.com/skilldiseno/'
 
   constructor(private httpClient: HttpClient) { }
 

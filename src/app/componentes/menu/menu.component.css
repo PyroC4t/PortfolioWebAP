@@ -64,4 +64,10 @@ ul li a:hover::before{
     ul{
         flex-direction: column;
     }
+    ul li a{
+        margin-top: 10px;
+    }
+    ul li a::before{
+        letter-spacing: 1px;
+    }
 }
